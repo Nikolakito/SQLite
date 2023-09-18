@@ -1,0 +1,7 @@
+INSERT INTO staff(first_name, last_name, address_id, store_id) VALUES("nico",
+"ferreiros", (SELECT address_id FROM address a WHERE address="aña")
+, (SELECT store_id FROM store WHERE address_id=606)), ("agos",
+"acuña", (SELECT address_id FROM address a WHERE address="aña")
+, (SELECT store_id FROM store WHERE address_id=606) )
+
+UPDATE store SET manager_staff_id=(SELECT staff_id FROM staff WHERE first_name="nico")
