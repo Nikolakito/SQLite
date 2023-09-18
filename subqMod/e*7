@@ -1,0 +1,2 @@
+INSERT INTO address(address, district, city_id, postal_code, phone) VALUES("aña",
+"", (SELECT city_id FROM city WHERE city like "variloche"), 1772, 5491170319166 ) 
