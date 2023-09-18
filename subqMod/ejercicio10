@@ -1,0 +1,2 @@
+UPDATE film SET rental_duration=1 WHERE film_id=(SELECT film_id FROM film_category fc 
+JOIN category c ON fc.category_id=c.category_id WHERE name like "Action") 
