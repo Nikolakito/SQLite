@@ -1,0 +1,1 @@
+DELETE FROM language WHERE name = (SELECT name FROM language WHERE name != "English" LIMIT 1);
