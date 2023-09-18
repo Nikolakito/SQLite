@@ -1,0 +1,6 @@
+PRAGMA foreign_keys = false;
+
+INSERT INTO city(city, country_id) VALUES("variloche", (SELECT country_id FROM country
+WHERE country like "Argentina")), 
+("necochea", (SELECT country_id FROM country WHERE country like "Argentina")),
+("entre rios", (SELECT country_id FROM country WHERE country like "Argentina"));
